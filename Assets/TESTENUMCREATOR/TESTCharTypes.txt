@@ -1,0 +1,6 @@
+public enum TESTCharTypes
+{
+    String,
+    Int,
+    Bool,
+}
