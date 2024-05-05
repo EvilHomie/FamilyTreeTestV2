@@ -6,7 +6,7 @@ using static EnumsAndStructs;
 public class UnitEventsController : MonoBehaviour
 {
     [SerializeField] List<EventData> _eventsCollection;
-    [SerializeField] UnitCharacteristics _unitCharacteristics;
+    [SerializeField] UnitCharacteristicsTEMP _unitCharacteristics;
     void Start()
     {
         _eventsCollection = new(ManagersLocator.EventContainer.GetAllEvents());

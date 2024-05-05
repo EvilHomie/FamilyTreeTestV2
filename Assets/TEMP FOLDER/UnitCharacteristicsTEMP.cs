@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class UnitCharacteristics : MonoBehaviour
+public class UnitCharacteristicsTEMP : MonoBehaviour
 {
     
     [Header("Main Characteristics")]

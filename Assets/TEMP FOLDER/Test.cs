@@ -71,7 +71,7 @@ public class Test : MonoBehaviour
         //Debug.Log(Chars[2].Value.GetType());
     }
 
-    [SerializeField] TESTCharNames CharTypes;
+    [SerializeField] CharacteristicName CharTypes;
 
     //[SerializeField] List<TestChar> Chars = new ();
 }

@@ -1,7 +1,0 @@
-using UnityEngine;
-
-public class .cs : MonoBehaviour
-{
-    public string awdwa;
-    public string aaaa;
-}

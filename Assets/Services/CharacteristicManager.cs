@@ -4,9 +4,9 @@ using static EnumsAndStructs;
 
 public class CharacteristicManager 
 {
-    readonly Type myType = typeof(UnitCharacteristics);
+    readonly Type myType = typeof(UnitCharacteristicsTEMP);
 
-    public void UpdateCharacteristic(UnitCharacteristics unit, CharName charName, string newValue, AffectType affectType)
+    public void UpdateCharacteristic(UnitCharacteristicsTEMP unit, CharName charName, string newValue, AffectType affectType)
     {
         var property = myType.GetProperty(charName.ToString());
 
@@ -41,21 +41,21 @@ public class CharacteristicManager
         if (currentValue < 0) currentValue = 0;
     }
 
-    public bool CheckCharacteristics(UnitCharacteristics unit, GameEvent gameEvent)
+    public bool CheckCharacteristics(UnitCharacteristicsTEMP unit, GameEvent gameEvent)
     {
         bool totalres = gameEvent.Conditions.TrueForAll(condition => CheckCharMatchCondition(unit, condition.charName, condition.mustBe, condition.requiredValue));
         UnityEngine.Debug.Log("TOTAL RESULT : " + totalres);
         return totalres;
     }
 
-    public bool ORCheckCharacteristics(UnitCharacteristics unit, GameEvent gameEvent)
+    public bool ORCheckCharacteristics(UnitCharacteristicsTEMP unit, GameEvent gameEvent)
     {
         bool totalres = gameEvent.Conditions.Any(condition => CheckCharMatchCondition(unit, condition.charName, condition.mustBe, condition.requiredValue));
         UnityEngine.Debug.Log("TOTAL RESULT : " + totalres);
         return totalres;
     }
 
-    bool CheckCharMatchCondition(UnitCharacteristics unit, CharName charName, CompareType compareType, string requiredValue)
+    bool CheckCharMatchCondition(UnitCharacteristicsTEMP unit, CharName charName, CompareType compareType, string requiredValue)
     {
         var property = myType.GetProperty(charName.ToString());
         bool isMatched = false;
