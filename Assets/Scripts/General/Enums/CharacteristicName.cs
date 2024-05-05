@@ -1,5 +1,8 @@
 public enum CharacteristicName
 {
-    fullName,
+    personName,
     age,
+    happy,
+    harisma,
+    isMarried,
 }

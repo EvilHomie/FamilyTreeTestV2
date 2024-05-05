@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 441c4bc031e943e48b36c0da1959d676, type: 3}
+  m_Name: MarriageEvent
+  m_EditorClassIdentifier: 
+  _oneTimeEvent: 0
+  _eventName: ffff
+  _discription: 
+  _deffWeight: 50
+  _mandatoryConditions:
+  - conditionName: "\u041D\u0435 \u0436\u0435\u043D\u0430\u0442"
+    characteristicName: 4
+    compareType: 3
+    requiredValue: true
+  - conditionName: "\u041D\u0435 \u043C\u043E\u043B\u043E\u0436\u0435 20"
+    characteristicName: 1
+    compareType: 0
+    requiredValue: 20
+  _orConditions: []
+  _choices:
+  - discription: 
+    affectedCharateristics: []
+    aditionActions: 01000000
