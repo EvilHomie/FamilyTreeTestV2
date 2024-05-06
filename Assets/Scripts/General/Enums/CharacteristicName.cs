@@ -5,4 +5,5 @@ public enum CharacteristicName
     happy,
     harisma,
     isMarried,
+    workInShcool,
 }

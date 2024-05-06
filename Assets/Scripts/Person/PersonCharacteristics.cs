@@ -7,4 +7,5 @@ public class PersonCharacteristics : MonoBehaviour
     public int happy;
     public int harisma;
     public int isMarried;
+    public bool workInShcool;
 }

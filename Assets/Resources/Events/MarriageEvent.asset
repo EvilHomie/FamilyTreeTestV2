@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: MarriageEvent
   m_EditorClassIdentifier: 
   _oneTimeEvent: 0
+  _primaryEvent: 0
   _eventName: ffff
   _discription: 
   _deffWeight: 50
@@ -25,8 +26,18 @@ MonoBehaviour:
     characteristicName: 1
     compareType: 0
     requiredValue: 20
+  - conditionName: "\u041D\u0435 \u043C\u043E\u043B\u043E\u0436\u0435 20"
+    characteristicName: 1
+    compareType: 0
+    requiredValue: 20
+  - conditionName: "\u041D\u0435 \u043C\u043E\u043B\u043E\u0436\u0435 20"
+    characteristicName: 1
+    compareType: 0
+    requiredValue: 20
   _orConditions: []
   _choices:
   - discription: 
     affectedCharateristics: []
-    aditionActions: 01000000
+    aditionActions:
+    - ActionType: 2
+      aditionEventName: wdaw

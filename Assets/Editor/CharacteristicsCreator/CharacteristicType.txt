@@ -5,4 +5,5 @@ public enum CharacteristicType
     Int,
     Int,
     Int,
+    Bool,
 }
